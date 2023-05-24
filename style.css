@@ -8,7 +8,7 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-image: linear-gradient(to bottom right, #000000 0%, #303030 80%);
+    background-image: linear-gradient(to bottom right, #000000 0%, #0c0c0c 80%, #161616 95%);
     background-attachment: fixed;
     margin: 0px;
     color: white;
@@ -32,7 +32,10 @@ ul {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding: 128px;
+    padding-left: 64px;
+    padding-right: 64px;
+    padding-top: 56px;
+    padding-bottom: 56px;
     border-bottom: 2px solid var(--var-grey-opaque);
 }
 
@@ -57,13 +60,18 @@ ul {
     padding: 56px;
 }
 
+.contacto {
+    padding-top: 56px;
+}
+
 #main-container-div-2 {
     display: flex;
     background-color: var(--var-violet);
     border-radius: 24px;
     justify-content: center;
     font-size: 1.30em;
-    box-shadow: 0px 0px 24px 4px var(--var-violet-clear);
+    box-shadow: 0px 0px 32px 8px var(--var-violet-clear);
+    text-shadow: 1px 1px 8px rgba(255, 255, 255, 0.836);
 }
 
 #nico {
@@ -84,7 +92,7 @@ ul {
     }
 
     .main-container-div {
-        padding: 32px;
+        padding: 64px;
         width: auto;
     }
 
@@ -101,12 +109,15 @@ ul {
         align-items: center;
     }
 
-
     #main-container-div-2 {
         display: flex;
         justify-content: center;
         font-size: 1em;
         padding: 1em;
+    }
+
+    #introduction {
+        text-align: center;
     }
 
 }
