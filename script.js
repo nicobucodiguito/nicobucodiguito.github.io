@@ -1,8 +1,5 @@
 window.addEventListener("load", (event) => {
     console.log(String.raw`
-Hello there!
-
-
      /\_/\
     ( o.o )
      > ^ <`);

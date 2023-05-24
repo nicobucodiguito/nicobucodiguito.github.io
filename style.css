@@ -69,3 +69,44 @@ ul {
 #nico {
     text-shadow: 0px 0px 6px var(--var-violet-text);
 }
+
+@media (max-width: 1200px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .main-flex-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+    }
+
+    .main-container-div {
+        padding: 32px;
+        width: auto;
+    }
+
+    .flex-container-2 {
+        display: flex;
+        flex-direction: column;
+    }
+    
+
+    .flex-container-3 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    #main-container-div-2 {
+        display: flex;
+        justify-content: center;
+        font-size: 1em;
+        padding: 1em;
+    }
+
+}
