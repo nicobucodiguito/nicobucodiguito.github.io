@@ -19,6 +19,10 @@ ul {
     list-style-type: disc;
 }
 
+a {
+    color:aliceblue;
+}
+
 .header {
     padding-top: 1px;
     height: 52px;
@@ -69,6 +73,7 @@ ul {
     height: 60px;
     width: 250px;
     border-radius: 32px;
+    box-shadow: 0px 0px 8px 0px rgb(255, 255, 255);
 }
 
 #btn-div {
@@ -86,14 +91,14 @@ ul {
     font-size: 1.30em;
     /*box-shadow: 0px 0px 32px 8px var(--var-violet-clear);*/
     text-shadow: 1px 1px 8px rgba(255, 255, 255, 0.836);
-    animation: 1s infinite alternate ascii-fog-animation;
+    animation: 1s infinite alternate ascii-heartbeat-animation;
 }
 
 #nico {
     text-shadow: 0px 0px 14px rgba(255, 255, 255, 0.76);
 }
 
-@keyframes ascii-fog-animation {
+@keyframes ascii-heartbeat-animation {
     from {
         box-shadow: 0px 0px 32px 8px var(--var-violet-clear);
     }
@@ -102,8 +107,6 @@ ul {
         box-shadow: 0px 0px 32px 8px var(--var-violet-clearer);
     }
 }
-
-
 
 @media (max-width: 1200px) {
 
@@ -115,12 +118,14 @@ ul {
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
         padding: 0px;
     }
 
     .main-container-div {
         padding: 64px;
         width: auto;
+        
     }
 
     .flex-container-2 {
@@ -137,6 +142,10 @@ ul {
     }
 
     .header {
+        text-align: center;
+    }
+
+    #main-container-div-1-text {
         text-align: center;
     }
 
