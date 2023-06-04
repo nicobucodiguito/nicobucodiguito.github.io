@@ -14,15 +14,19 @@
 <body>
     <div class="header">        
         <div class="header-content">
-            <h3><span id="nico">nico's</span> stash</h3>
+            <h3>nico's stash</h3>
         </div>
     </div>
 
     <div class="main-flex-container">
         <div class="main-container-div" id="main-container-div-1">
             <div id="main-container-div-1-text">
-                <h1>Welcome to <span id="nico">nico's</span> stash!</h1>
-                <h2 id="introduction">Hello there! I'm <span id="nico">Nico</span>. Please take a look around and check out some projects of mine! If you need to contact me, I've got my email linked below, I'll be pleased to talk to you.</h2>
+                <h1 id="welcome-en">Welcome to nico's stash!</h1><h1 id="welcome-es" style="display: none">¡Bienvenido a mi portfolio web!</h1>
+                <h2 id="introduction-en">Hello there! I'm <span id="nico">Nico</span>. Please take a look around and check out some projects of mine! If you need to contact me, I've got my email linked below, I'll be pleased to talk to you.</h2>
+                <h2 id="introduction-es" style="display: none">¡Hola, soy <span id="nico">Nico</span>! Sentite libre de pasar y mirar algunos de mis proyectos. Si necesitás contactarme, mi correo electrónico está en el pie de la página, ¡va a ser un gusto charlar con vos!</h2>
+                <div id="btn-div">
+                    <button class="lang-btn"><h3 id="lang-en"> Leer en español 🇦🇷</h3><h3 style="display: none" id="lang-es">Read in english 🇬🇧</h3></button>
+                </div>
             </div>
     </div>
         <div class="main-container-div" id="main-container-div-2">
@@ -32,8 +36,8 @@
     <div class="flex-container-2">
 
         <div>
-        <h2>Web Dev Projects</h2>
-        <ul>
+        <h2 id="webdevprojects">Web Dev Projects</h2>
+        <ul id="webdevprojectsul">
             <li>Atucha-Simulator</li>
             <li>Fact-of-the-Day</li>
             <li>Sumitas</li>
@@ -44,8 +48,8 @@
         </div>
 
         <div>
-        <h2>Powershell Projects</h2>     
-        <ul>
+        <h2 id="powershellprojects">Powershell Projects</h2>     
+        <ul id="powershellprojectsul">
             <li>win32spl-Swapper-Tool</li>
             <li>Disable-Windows-Explorer-Web-Search</li>
             <li>Windows-Programs-Toolkit</li>
@@ -53,14 +57,14 @@
         </div>
 
         <div>
-        <h2>Other Projects</h2> 
-        <ul>
+        <h2 id="otherprojects">Other Projects</h2> 
+        <ul id="otherprojectsul">
             <li>Soon! :)</li>
         </ul>           
         </div>
     </div>
 
-    <h2 class="contacto" style="text-align: center;">Contact me!</h2>
+    <h2 id="contacto" class="contacto" style="text-align: center;">Contact me!</h2>
 
     <div class="flex-container-3">
         <div>
@@ -73,5 +77,5 @@
         </div>
     </div>
 </body>
-    <script src="script.js" defer></script>
+<script src="script.js" defer></script>
 </html>

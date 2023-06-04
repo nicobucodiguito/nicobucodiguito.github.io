@@ -7,9 +7,23 @@ window.addEventListener("load", (event) => {
 });
 
 const asciiHTML = document.getElementById("ascii-pre");
+const switcher = document.querySelector(".lang-btn");
+const welcomeEng = document.getElementById("welcome-en");
+const welcomeSpa = document.getElementById("welcome-es");
+const introductionEng = document.getElementById("introduction-en");
+const introductionSpa = document.getElementById("introduction-es");
+const buttonEng = document.getElementById("lang-en");
+const buttonSpa = document.getElementById("lang-es");
+const webdevprojects = document.getElementById("webdevprojects");
+const webdevprojectsul = document.getElementById("webdevprojectsul");
+const powershellprojects = document.getElementById("powershellprojects");
+const powershellprojectsul = document.getElementById("powershellprojectsul");
+const otherprojects = document.getElementById("otherprojects");
+const otherprojectsul = document.getElementById("otherprojectsul");
+const contacto = document.getElementById("contacto");
 
 function asciiSlideshow(asciiHTML, asciiArray, stop, intervalo) { //Función que toma un elementoHTML y un array 
-    let indice = 0//y updatea el elemento con cada objecto del array cada X tiempo (x siendo intervalo medido en ms)
+    let indice = 0 //y updatea el elemento con cada objecto del array cada X tiempo (x siendo intervalo medido en ms)
     if (stop === 0) {
     interval = setInterval(() => {
        asciiHTML.innerText = asciiArray[indice];
@@ -22,6 +36,28 @@ function asciiSlideshow(asciiHTML, asciiArray, stop, intervalo) { //Función que
          clearInterval(interval)
     }                    
 }
+
+
+switcher.addEventListener('click', function() {
+     if (welcomeSpa.style.display === "none")
+     {
+          welcomeSpa.style.display = "block";
+          introductionSpa.style.display = "block";
+          welcomeEng.style.display = "none";
+          introductionEng.style.display = "none";
+          buttonSpa.style.display = "block";
+          buttonEng.style.display = "none";
+     } else
+     {
+          welcomeEng.style.display = "block";
+          welcomeSpa.style.display = "none";
+          introductionEng.style.display = "block";
+          introductionSpa.style.display = "none";
+          buttonEng.style.display = "block";
+          buttonSpa.style.display = "none";
+     }
+})
+
 
 const asciiBash = [String.raw`
              ,----------------,              ,---------,
